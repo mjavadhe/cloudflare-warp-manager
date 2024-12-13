@@ -160,3 +160,7 @@ Hello, I am Mohammad Javad Heydarpanah, a Python and Django programmer. I hope y
 This program is an open-source software written in Python. If you want to make changes to this program, you can clone the repository, apply the necessary changes, and run the program.
 
 - [Cloudflare WARP Manager repository](https://github.com/mjavadhe/cloudflare-warp-manager)
+
+## Download the application
+
+- (https://github.com/mjavadhe/cloudflare-warp-manager/raw/refs/heads/master/Application/cloudflare-warp-manager)
