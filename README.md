@@ -163,4 +163,4 @@ This program is an open-source software written in Python. If you want to make c
 
 ## Download the application
 
-- (https://github.com/mjavadhe/cloudflare-warp-manager/raw/refs/heads/master/Application/cloudflare-warp-manager)
+- [Cloudflare WARP Manager](https://github.com/mjavadhe/cloudflare-warp-manager/raw/refs/heads/master/Application/cloudflare-warp-manager)
