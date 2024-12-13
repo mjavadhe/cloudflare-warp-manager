@@ -9,6 +9,12 @@ This project is a Python-based application to manage Cloudflare WARP, including 
 - Linux (Ubuntu/Debian-based or RedHat-based distributions)
 - Cloudflare WARP installed
 
+## Install required Python packages
+
+```bash
+pip3 install -r requirements.txt
+```
+
 ### Prerequisites
 
 1. Install Python and `pip` (Python package manager).
@@ -80,7 +86,7 @@ sudo yum install cloudflare-warp
 4. Register with Cloudflare:
 
 ```bash
-warp-cli register
+warp-cli registration new
 ```
 
 5. Connect to Cloudflare WARP:
