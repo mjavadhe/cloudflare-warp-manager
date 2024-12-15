@@ -1,4 +1,3 @@
-
 # Cloudflare WARP Manager
 
 This project is a Python-based application to manage Cloudflare WARP, including connecting, disconnecting, checking status, and setting DNS. The application provides a graphical user interface (GUI) built using `tkinter`.
@@ -36,28 +35,34 @@ sudo apt update
 2. Install Cloudflare's official package repository:
 
 ```bash
-curl -s https://pkg.cloudflare.com/install.sh | sudo bash
+curl -fsSL https://pkg.cloudflareclient.com/pubkey.gpg | sudo gpg --yes --dearmor --output /usr/share/keyrings/cloudflare-warp-archive-keyring.gpg
 ```
 
-3. Install `warp-cli`:
+3. Add this repo to your apt repositories
 
 ```bash
-sudo apt install cloudflare-warp
+echo "deb [signed-by=/usr/share/keyrings/cloudflare-warp-archive-keyring.gpg] https://pkg.cloudflareclient.com/ $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/cloudflare-client.list
 ```
 
-4. Register with Cloudflare:
+4. Install `warp-cli`:
+
+```bash
+sudo apt-get update && sudo apt-get install cloudflare-warp
+```
+
+6. Register with Cloudflare:
 
 ```bash
 warp-cli registration new
 ```
 
-5. Connect to Cloudflare WARP:
+7. Connect to Cloudflare WARP:
 
 ```bash
 warp-cli connect
 ```
 
-6. Run Cloudflare WARP Manager:
+8. Run Cloudflare WARP Manager:
 
 ```bash
 python3 cloadflare-warp-manager.py  
@@ -71,10 +76,10 @@ python3 cloadflare-warp-manager.py
 sudo yum install -y curl
 ```
 
-2. Add Cloudflare's repository:
+2. Add cloudflare-warp.repo to /etc/yum.repos.d/:
 
 ```bash
-curl -s https://pkg.cloudflare.com/install.sh | sudo bash
+curl -fsSl https://pkg.cloudflareclient.com/cloudflare-warp-ascii.repo | sudo tee /etc/yum.repos.d/cloudflare-warp.repo
 ```
 
 3. Install Cloudflare WARP:
